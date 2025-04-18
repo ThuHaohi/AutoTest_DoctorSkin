@@ -16,7 +16,7 @@ import java.util.List;
 import static java.lang.Thread.sleep;
 
 public class Project_Test_User extends SetUpBrowser_User {
-    @Test
+    @Test(priority = 1)
     public void ProductPage(){
 //        driver.get(objU.URL);
         Actions doubleclick = new Actions(driver);
@@ -58,7 +58,7 @@ public class Project_Test_User extends SetUpBrowser_User {
         }
 
     }
-    @Test
+    @Test(priority = 2)
     public void OrderProduct() {
     //--------------Order Product------------------------------------
         driver.findElement(objU.btnCart).click();

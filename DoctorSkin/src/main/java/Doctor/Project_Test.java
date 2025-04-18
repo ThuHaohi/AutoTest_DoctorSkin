@@ -18,7 +18,7 @@ public class Project_Test extends SetUpBrowser {
 
 
 
-    @Test
+    @Test(priority = 1)
     public void ProductsPage_Admin(){
         driver.get(obj.URLAdmin);
         Helper.delay(2);
@@ -68,7 +68,7 @@ public class Project_Test extends SetUpBrowser {
 
 
     }
-    @Test
+    @Test(priority = 2)
     public void BlogsPage_Admin(){
         driver.get(obj.URLAdmin);
         driver.findElement(obj.menuBlogs).click();
